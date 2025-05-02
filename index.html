@@ -4,52 +4,87 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sk Sakil Ali - Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <header class="hero">
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70" tabindex="0">
+
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <h1>Sk Sakil Ali</h1>
-      <p>Undergraduate Student | Computer Science Engineering</p>
+      <a class="navbar-brand" href="#">Sk Sakil Ali</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero d-flex align-items-center justify-content-center text-center" id="home">
+    <div class="text-white" data-aos="fade-up">
+      <h1 class="display-4 fw-bold">Sk Sakil Ali</h1>
+      <p class="lead">Undergraduate Student | Computer Science Engineering</p>
     </div>
   </header>
 
-  <section class="about section">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>I’m an aspiring software engineer currently pursuing my degree in Computer Science Engineering. Passionate about technology, coding, and building innovative solutions.</p>
+  <section id="about" class="py-5 bg-dark text-white">
+    <div class="container" data-aos="fade-right">
+      <h2 class="text-center mb-4">About Me</h2>
+      <p class="text-center">I'm currently pursuing a degree in Computer Science Engineering. I love creating intuitive user interfaces, clean code, and innovative software solutions.</p>
     </div>
   </section>
 
-  <section class="projects section">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="project-grid">
-        <div class="project-card">
-          <h3>Project One</h3>
-          <p>Short description of your project here.</p>
+  <section id="projects" class="py-5 bg-black text-white">
+    <div class="container" data-aos="fade-up">
+      <h2 class="text-center mb-5">Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100 bg-secondary text-white shadow">
+            <div class="card-body">
+              <h5 class="card-title">Project One</h5>
+              <p class="card-text">A short description of your first project goes here. You can describe its purpose, tools used, and what makes it special.</p>
+            </div>
+          </div>
         </div>
-        <div class="project-card">
-          <h3>Project Two</h3>
-          <p>Short description of another project here.</p>
+        <div class="col-md-6">
+          <div class="card h-100 bg-secondary text-white shadow">
+            <div class="card-body">
+              <h5 class="card-title">Project Two</h5>
+              <p class="card-text">Description of another project, preferably showcasing a different skill or technology to show variety.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="contact section">
-    <div class="container">
-      <h2>Contact</h2>
-      <p>Email: your.email@example.com</p>
-      <p>LinkedIn: linkedin.com/in/sksakilali</p>
-      <p>GitHub: github.com/sksakilali</p>
+  <section id="contact" class="py-5 bg-dark text-white">
+    <div class="container" data-aos="fade-left">
+      <h2 class="text-center mb-4">Contact</h2>
+      <div class="text-center">
+        <p>Email: your.email@example.com</p>
+        <p>LinkedIn: linkedin.com/in/sksakilali</p>
+        <p>GitHub: github.com/sksakilali</p>
+      </div>
     </div>
   </section>
 
-  <footer>
+  <footer class="py-3 bg-black text-center text-white">
     <div class="container">
-      <p>&copy; 2025 Sk Sakil Ali. All rights reserved.</p>
+      <small>&copy; 2025 Sk Sakil Ali. All rights reserved.</small>
     </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000 });
+  </script>
 </body>
 </html>
